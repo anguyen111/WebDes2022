@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="_css/rps.css">
+        <link rel="stylesheet" href="_css\rps.css">
         <meta charset="utf-8">
         <title>Rock, Paper, Scissors</title>
     </head>
@@ -10,16 +10,20 @@
         <div class = "title">
             <h1>PLAY ROCK PAPER SCISSORS</h1>
         </div>
+
+        <!-- This is where players choose -->
         <div class = "RPS">
             <button class = "button" onclick = "choose('rock')"><img width = 120px height = 150px src="http://images.clipartpanda.com/rock-clipart-7Ta7BALTA.png"></button>
             <button class = "button" onclick = "choose('paper')"><img width = 120px height = 150px src="http://clipart-library.com/data_images/296148.png"></button>
             <button class = "button" onclick = "choose('scissors')"><img width = 120px height = 150px src="https://www.pngkit.com/png/full/28-284006_black-and-white-scissors-free-clip-art-black.png"></button> 
         </div>
+
+        <!-- This is where the results are shown -->
         <h3>PLAYER:</h3>
         <div id ="playerID"></div>
         <h3>COMPUTER:</h3>
         <div id ="comID"></div>
         <div id ="resultText"></div>
     </body>
-    <script src="_js/rps.js"></script>
+    <script src="_js\rps.js"></script>
 </html>

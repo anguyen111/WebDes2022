@@ -5,6 +5,7 @@ console.log(myName);
 // console is an object, has functions and properties
 console.log("hello world!");
 
+// these makes all the functions run
 function init() {
     changeHeading();
     greeting();

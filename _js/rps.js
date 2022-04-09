@@ -2,12 +2,13 @@ let userChoice;
 let win;
 let choices = ["rock", "paper", "scissors"]; 
 
-
+// lets the computer decide through random umbers
 function createRandom() {
     let randnum = Math.floor(Math.random() * choices.length);
     return cpu = choices[randnum];
 }
 
+// Sets the pictures up
 function drawImg(pic, width, height, alt, id){
     var x = document.createElement("IMG");
     x.setAttribute("src", pic);
@@ -28,6 +29,7 @@ function choose(choice) {
     playRPS();
 }
 
+// Creates the images for both cpu and player
 function createImage() {
     if (userChoice == "rock") {
         drawImg("http://images.clipartpanda.com/rock-clipart-7Ta7BALTA.png", "90", "120", "rock", "playerID")
@@ -69,6 +71,7 @@ function playRPS() {
     }
 }
 
+// deletes the previous results
 function deleteText() {
     var element = document.getElementById("resultText");
     while (element.hasChildNodes()) {
