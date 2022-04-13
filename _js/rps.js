@@ -1,6 +1,8 @@
 let userChoice;
 let win;
 let choices = ["rock", "paper", "scissors"]; 
+let playerScore = 0;
+let comScore = 0;
 
 // lets the computer decide through random umbers
 function createRandom() {
@@ -63,11 +65,15 @@ function playRPS() {
         let winner = document.createElement('h1');
         winner.innerText = "You lose";
         document.getElementById("resultText").appendChild(winner);
+        comScore +=1;
+        document.getElementById('comScore').innerHTML = comScore;
     }
     else {
         let winner = document.createElement('h1');
         winner.innerText = "You win";
         document.getElementById("resultText").appendChild(winner);
+        playerScore +=1;
+        document.getElementById('playerScore').innerHTML = playerScore;
     }
 }
 
